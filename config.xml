@@ -1,53 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
+ <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "com.binarysoft.emumap"
 	versionCode="1"
 	version   = "1.0">
-    <name>Groupware System</name>
-    <description>
-Groupware System	</description>
-<author href="google.com" email="olumideogundele@gmail.com">
-Bisola Adegoke
-</author>
+	<preference name="phonegap-version" value="cli-6.5.0"/>
+
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <gap:platform name="winphone" />
-  <preference name="phonegap-version" value="cli-6.3.0"/>
-    <preference name="orientation" value="portrait" />
+	
+    <name>GroupWare System</name>
+    <description>By Bisola Adegoke</description>
+    <author href="http://www.online.shiftclocker.com" email="info@shiftclocker.com">Bisola Adegoke</author>
+    <!--<content src="index.html" />-->
+    <preference name="permissions" value="none" />
+	<preference name="android-build-tool" value="gradle" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
-    <preference name="DisallowOverscroll" value="true"/>
     <preference name="disallowOverscroll" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="prerendered-icon" value="false" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-installLocation" value="auto" />
-    <preference name="BackgroundColor" value="0xffffffff "/>
-    <preference name="KeepRunning" value="true"/>
-	<preference name="AutoHideSplashScreen" value="true"/>
-<preference name="SplashScreenDelay" value="1000"/>
-<preference name="FadeSplashScreen" value="false"/>
-<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="ErrorUrl" value="error.html" />
 
-	
-	
-	
-	<icon src="images/logo.png" gap:platform="android" gap:density="ldpi" />
-	<icon src="images/logo.png" gap:platform="android" gap:density="mdpi" />
-	<icon src="images/logo.png" gap:platform="android" gap:density="hdpi" />
-	<icon src="images/logo.png" gap:platform="android" gap:density="xhdpi" />
-	<icon src="images/logo.png" gap:platform="android" gap:density="xxhdpi" />
-		
-	<gap:splash src="images/splash.png" gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="images/splash.png" gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="images/splash.png" gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="images/splash.png" gap:platform="android" gap:density="xhdpi" />
-    <gap:splash src="images/splash.png" gap:platform="android" gap:density="xxhdpi" />
-	
-	<feature name="http://api.phonegap.com/1.0/file-transfer"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
+	<preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="10" />
+    <preference name="android-targetSdkVersion" value="19" />
+    <preference name="android-installLocation" value="auto" />
+	<gap:plugin name="de.appplant.cordova.plugin.badge" source="npm" />
+   
+ 
     <gap:plugin name="org.apache.cordova.console" source="npm" />
  
     <gap:plugin name="org.apache.cordova.device" source="npm" />
@@ -61,9 +51,65 @@ Bisola Adegoke
     <gap:plugin name="org.apache.cordova.media" source="npm"/>
     <gap:plugin name="org.apache.cordova.network-information" source="npm"/>
  
-    <access origin="*" subdomains="true" />
+    <icon src="images/logo.png" />
+	 
+    <access origin="*" />
+ 
 
-    
-    
-    
+
+    <!-- iPhone / iPod Touch  - lower 4s -->
+    <icon src="images/logo.png" gap:platform="ios" width="57" height="57" />
+    <icon src="images/logo.png" gap:platform="ios" width="114" height="114" />
+    <icon src="images/logo.png" gap:platform="ios" width="72" height="72" />
+
+    <!-- iPhone / iPod Touch - 5-5s -->
+    <icon src="images/logo.png" gap:platform="ios" width="60" height="60" />
+    <icon src="images/logo.png" gap:platform="ios" width="120" height="120" />
+    <!-- iPhone6-6+ -->
+    <icon src="images/logo.png" gap:platform="ios" width="180" height="180" />
+
+    <!-- Settings Icon -->
+    <icon src="images/logo.png" gap:platform="ios" width="29" height="29" />
+    <icon src="images/logo.png" gap:platform="ios" width="58" height="58" />
+
+    <!-- Spotlight Icon -->
+    <icon src="images/logo.png" gap:platform="ios" width="40" height="40" />
+    <icon src="images/logo.png" gap:platform="ios" width="80" height="80" />
+	
+	
+	 
+	
+	
+	<icon src="images/36x36.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="images/48x48.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="images/72x72.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="images/92x92.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="images/144x144.png" gap:platform="android" gap:density="xxhdpi" />
+ 
+	
+	
+
+    <plugin name="cordova-plugin-whitelist" version="1" source="npm"/>
+
+    <gap:plugin name="org.apache.cordova.device" version="0.2.3" source="npm"/>
+    <gap:plugin name="cordova-plugin-geolocation" source="npm"/>
+	 
+		<feature name="http://api.phonegap.com/1.0/file" />
+		<feature name="http://api.phonegap.com/1.0/geolocation" />
+		<feature name="http://api.phonegap.com/1.0/media" />
+		<feature name="http://api.phonegap.com/1.0/network" />
+		<feature name="http://api.phonegap.com/1.0/notification" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
 </widget>
